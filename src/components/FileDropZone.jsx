@@ -26,12 +26,10 @@ const FileDropZone = ({ className, props }) => {
       <input {...getInputProps()} {...props} />
       {isDragActive ? (
         <div>
-          <p>Drag here to upload</p>
           <img src='/file-upload-active.png' alt='icon' />
         </div>
       ) : (
         <div>
-          <p>Drag or click to upload the image</p>
           <img src='/file-upload.png' alt='icon' />
         </div>
       )}

@@ -19,7 +19,7 @@ const AdminSidebar = () => {
   return (
     <aside className='flex min-h-screen w-64 flex-col overflow-y-auto border-r bg-black px-5 py-8 max-h-full'>
       <a href='#'>
-        <img src='./logo.jpg' alt='logo' className='h-8 w-8' />
+        <img src='./logo.jpg' alt='logo' className='h-8 w-8 rounded-full' />
       </a>
       <div className='mt-6 flex flex-1 flex-col justify-between'>
         <nav className='-mx-3 space-y-6 '>
