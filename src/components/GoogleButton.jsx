@@ -15,8 +15,9 @@ const GoogleButton = () => {
       <GoogleLogin
         theme='filled_black'
         onSuccess={async (credentialResponse) => {
+          console.log("credentialResponse", credentialResponse)
           const decoded = jwtDecode(credentialResponse.credential)
-          console.log(decoded)
+          console.log("Decoded ", decoded)
           const authRes = {
             name: `${decoded.given_name} ${decoded.family_name}`,
             email: decoded.email,
